@@ -1,0 +1,107 @@
+/* Color palette: https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.wrapper{
+    width: 375px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards{
+    width: 350px;
+    height: 600px;
+    display: inline-block;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.cards h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.cards img{
+    width: 300px;
+    width: 100%;
+}
+.cards p{
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+}
+.cards button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cards button a{
+    width: 100%;
+}
+
+#first-card{
+    background-color: #22223B;
+    border-radius: 15px 15px 0 0;
+}
+#first-card button{
+    color: #22223B;
+}
+#first-card button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: #22223B;
+}
+
+#second-card{
+    background-color: #4A4E69;
+}
+#second-card button{
+    color: #4A4E69;
+}
+#second-card button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: #4A4E69;
+}
+
+#third-card{
+    background-color: #9A8C98;
+    border-radius: 0 0 15px 15px;
+}
+#third-card button{
+    color: #9A8C98;
+}
+#third-card button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: #9A8C98;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .wrapper{
+        flex-direction: row;
+        width: 1050px;
+    }
+    #first-card{
+        border-radius: 15px 0 0 15px;
+    }
+    #third-card{
+        border-radius: 0 15px 15px 0;
+    }
+  }
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); } */
